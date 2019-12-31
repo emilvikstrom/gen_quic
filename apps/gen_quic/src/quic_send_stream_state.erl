@@ -1,9 +1,9 @@
--module(quic_send_statem).
+-module(quic_send_stream_state).
 -behaviour(gen_statem).
 -export([init/1,
         callback_mode/0,
         handle_event/3]).
-
+-include("../include/quic.hrl").
 %%Callbacks
 -export([ready/3, send/3, data_sent/3, data_recvd/3, reset_recvd/3, reset_sent/3]).
 

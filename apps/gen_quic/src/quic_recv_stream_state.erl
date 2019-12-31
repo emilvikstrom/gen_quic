@@ -1,8 +1,9 @@
--module(quic_recv_statem).
+-module(quic_recv_stream_state).
 -behaviour(gen_statem).
 -export([init/1,
         callback_mode/0,
         handle_event/3]).
+-include("../include/quic.hrl").
 
 -export([idle/3 ,recv/3, size_known/3, data_recvd/3, reset_recvd/3, data_read/3, reset_read/3]).
 
