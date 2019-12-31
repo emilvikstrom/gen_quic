@@ -1,5 +1,5 @@
 %QUIC # STREAM LIMIT
--define(MAX_STREAMS, math:pow(2,62) -1).
+-define(MAX_STREAMS, math:pow(2,60)).
 %Macros for different streamtypes
 
 % +------+----------------------------------+
