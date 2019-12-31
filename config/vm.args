@@ -1,0 +1,6 @@
+-sname gen_quic
+
+-setcookie gen_quic_cookie
+
++K true
++A30
