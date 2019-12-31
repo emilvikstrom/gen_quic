@@ -22,11 +22,18 @@
 %FRAME
 -record(quic_frame,
         {id,
-        offset}).
+        offset,
+        type}).
 
 %REQUIRED OPERATIONS
 -define(WRITE, write_data).
 -define(END, end_stream).
--define(RESET, reset).
+-define(RESET, reset_stream).
 -define(READ, read).
 -define(ABORT,abort).
+
+%PDU FOR SEND
+-define(STREAM, stream).
+-define(STREAM_DATA_BLOCKED, stream_data_blocked).
+-define(MAX_STREAM_DATA, max_stream_data).
+
