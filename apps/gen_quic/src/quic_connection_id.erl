@@ -19,6 +19,7 @@ init(_Args) ->
 
 handle_call(next,_From, #state{connection_id=Id}) ->
     {reply, Id, #state{connection_id=Id+1}};
+
 handle_call(stop, _From, State) ->
    {stop, normal, stopped, State};
 

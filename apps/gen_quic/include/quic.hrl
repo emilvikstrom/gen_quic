@@ -1,4 +1,3 @@
-%QUIC # STREAM LIMIT
 -define(MAX_STREAMS, math:pow(2,60)).
 %Macros for different streamtypes
 
@@ -37,3 +36,5 @@
 -define(STREAM_DATA_BLOCKED, stream_data_blocked).
 -define(MAX_STREAM_DATA, max_stream_data).
 
+%More operations
+-define(INIT_CONNECTION, not_implemented).

@@ -1,7 +1,7 @@
 gen_quic
 =====
 
-An OTP application
+OTP implementation of Quic draft 24
 
 Build
 -----
